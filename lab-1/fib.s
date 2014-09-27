@@ -32,7 +32,7 @@ fibonacci:
 	@ Recursive call to fibonacci with R4 - 2 as parameter
     bl fibonacci
 	@ R0 = R5 + R0 (update flags)
-    adds r0, r5, r0
+    add r0, r5, r0
 	pop {r3, r4, r5, pc}		@EPILOG
 
 	@ END CODE MODIFICATION
